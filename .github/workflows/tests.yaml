@@ -37,6 +37,7 @@ jobs:
     with:
       name : "ACTIONS_TESTS_5"
       value: "ACTIONS_TESTS_VALUE"
+      organization: ${{ github.repository_owner }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_6:
@@ -44,6 +45,7 @@ jobs:
     with:
       name : "ACTIONS_TESTS_6"
       secret: "ACTIONS_TESTS_VALUE"
+      organization: ${{ github.repository_owner }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_1_UNSET:
