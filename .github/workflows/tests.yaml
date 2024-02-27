@@ -2,24 +2,24 @@ name: Functional Tests
 on:
   workflow_dispatch:
 env:
-  GH_ACTIONS: "aaurizon/action/.github/workflows/"
+  GH_ACTIONS: "aaurizon/action/"
 jobs:
   ACTIONS_TESTS_1:
-    uses: "${{ env.GH_ACTIONS }}set.yaml@v1"
+    uses: "${{ env.GH_ACTIONS }}.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_1"
       value: "ACTIONS_TESTS_VALUE"
     secrets:
       TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_2:
-    uses: "${{ env.GH_ACTIONS}}set.yaml@v1"
+    uses: "${{ env.GH_ACTIONS}}.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_2"
       secret: "ACTIONS_TESTS_VALUE"
     secrets:
       TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_3:
-    uses: "${{ env.GH_ACTIONS}}set.yaml@v1"
+    uses: "${{ env.GH_ACTIONS}}.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_3"
       value: "ACTIONS_TESTS_VALUE"
@@ -27,7 +27,7 @@ jobs:
     secrets:
       TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_4:
-    uses: "${{ env.GH_ACTIONS}}set.yaml@v1"
+    uses: "${{ env.GH_ACTIONS}}.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_4"
       secret: "ACTIONS_TESTS_VALUE"
@@ -35,14 +35,14 @@ jobs:
     secrets:
       TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_5:
-    uses: "${{ env.GH_ACTIONS}}set.yaml@v1"
+    uses: "${{ env.GH_ACTIONS}}.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_5"
       value: "ACTIONS_TESTS_VALUE"
     secrets:
       TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_6:
-    uses: "${{ env.GH_ACTIONS}}set.yaml@v1"
+    uses: "${{ env.GH_ACTIONS}}.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_6"
       secret: "ACTIONS_TESTS_VALUE"
