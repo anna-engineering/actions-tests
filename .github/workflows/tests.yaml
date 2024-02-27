@@ -5,7 +5,7 @@ env:
   GH_ACTIONS: "aaurizon/action/.github/workflows/"
 jobs:
   ACTIONS_TESTS_1:
-    uses: "${{ env.GH_ACTIONS}}set.yaml@v1"
+    uses: "${{ env.GH_ACTIONS }}set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_1"
       value: "ACTIONS_TESTS_VALUE"
