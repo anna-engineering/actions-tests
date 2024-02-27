@@ -83,7 +83,7 @@ jobs:
     uses: "anna-engineering/actions/.github/workflows/unset.yaml@v1"
     with:
       name : "ACTIONS_TESTS_5"
-      organization: true
+      organization: ${{ github.repository_owner }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_6_UNSET:
