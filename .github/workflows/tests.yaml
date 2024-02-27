@@ -46,3 +46,50 @@ jobs:
       secret: "ACTIONS_TESTS_VALUE"
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  ACTIONS_TESTS_1_UNSET:
+    needs: [ ACTIONS_TESTS_1 ]
+    uses: "anna-engineering/actions/.github/workflows/unset.yaml@v1"
+    with:
+      name : "ACTIONS_TESTS_1"
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  ACTIONS_TESTS_2_UNSET:
+    needs: [ ACTIONS_TESTS_2 ]
+    uses: "anna-engineering/actions/.github/workflows/unset.yaml@v1"
+    with:
+      name : "ACTIONS_TESTS_2"
+      secret: true
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  ACTIONS_TESTS_3_UNSET:
+    needs: [ ACTIONS_TESTS_3 ]
+    uses: "anna-engineering/actions/.github/workflows/unset.yaml@v1"
+    with:
+      name : "ACTIONS_TESTS_3"
+      environment: "test"
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  ACTIONS_TESTS_4_UNSET:
+    needs: [ ACTIONS_TESTS_4 ]
+    uses: "anna-engineering/actions/.github/workflows/unset.yaml@v1"
+    with:
+      name : "ACTIONS_TESTS_4"
+      secret: true
+      environment: "test"
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  ACTIONS_TESTS_5_UNSET:
+    needs: [ ACTIONS_TESTS_5 ]
+    uses: "anna-engineering/actions/.github/workflows/unset.yaml@v1"
+    with:
+      name : "ACTIONS_TESTS_5"
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  ACTIONS_TESTS_6_UNSET:
+    needs: [ ACTIONS_TESTS_6 ]
+    uses: "anna-engineering/actions/.github/workflows/unset.yaml@v1"
+    with:
+      name : "ACTIONS_TESTS_6"
+      secret: true
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
