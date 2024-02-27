@@ -8,14 +8,14 @@ jobs:
       name : "ACTIONS_TESTS_1"
       value: "ACTIONS_TESTS_VALUE"
     secrets:
-      GH_TOKEN ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_2:
     uses: "anna-engineering/actions/.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_2"
       secret: "ACTIONS_TESTS_VALUE"
     secrets:
-      GH_TOKEN ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_3:
     uses: "anna-engineering/actions/.github/workflows/set.yaml@v1"
     with:
@@ -23,7 +23,7 @@ jobs:
       value: "ACTIONS_TESTS_VALUE"
       environment: "test"
     secrets:
-      GH_TOKEN ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_4:
     uses: "anna-engineering/actions/.github/workflows/set.yaml@v1"
     with:
@@ -31,18 +31,18 @@ jobs:
       secret: "ACTIONS_TESTS_VALUE"
       environment: "test"
     secrets:
-      GH_TOKEN ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_5:
     uses: "anna-engineering/actions/.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_5"
       value: "ACTIONS_TESTS_VALUE"
     secrets:
-      GH_TOKEN ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
   ACTIONS_TESTS_6:
     uses: "anna-engineering/actions/.github/workflows/set.yaml@v1"
     with:
       name : "ACTIONS_TESTS_6"
       secret: "ACTIONS_TESTS_VALUE"
     secrets:
-      GH_TOKEN ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
